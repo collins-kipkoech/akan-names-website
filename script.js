@@ -8,6 +8,7 @@ function formValidate() {
   if( document.inputForm.year.value == "" || document.inputForm.year.value.length !=4 || document.inputForm.year.value >2100 || document.inputForm.year.value <=1900) {
      alert( "enter valid year" );
      document.inputForm.year.focus() ;
+     //focus method is used to give focus to an html element. it does not accept any parameters and does not return any value
      return false;
   }
   else if( document.inputForm.month.value == "" || isNaN( document.inputForm.month.value ) || 
